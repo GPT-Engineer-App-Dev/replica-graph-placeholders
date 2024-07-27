@@ -1,14 +1,21 @@
-import { Home } from "lucide-react";
 import Index from "./pages/Index.jsx";
+import Practice from "./pages/Practice.jsx";
+import Roadmap from "./pages/Roadmap.jsx";
 
-/**
- * Central place for defining the navigation items. Used for navigation components and routing.
- */
 export const navItems = [
   {
-    title: "Home",
+    title: "Courses",
     to: "/",
-    icon: <Home className="h-4 w-4" />,
     page: <Index />,
+  },
+  {
+    title: "Practice",
+    to: "/practice",
+    page: <Practice />,
+  },
+  {
+    title: "Roadmap",
+    to: "/roadmap",
+    page: <Roadmap />,
   },
 ];
